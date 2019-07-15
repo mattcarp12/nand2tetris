@@ -15,4 +15,8 @@ CHIP Bit {
 
     PARTS:
     // Put your code here:
+	//CLOCKED IN,OUT;
+	Mux(sel=load,a=loop1,b=in,out=loop2);
+	DFF(in=loop2,out=loop1,out=out);
+	
 }
